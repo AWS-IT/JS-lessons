@@ -1,3 +1,4 @@
+/*
 //1
 
 const number = 2;
@@ -29,10 +30,13 @@ if(x > y){
 
 //4
 
+
 let num = prompt('число');
 if(num % 2 === 0){
     console.log('четное число')
 } else(console.log('нечетное число'))
+
+
 
 //5
 
@@ -47,5 +51,35 @@ if(num1 >= num2, num3){
 } else if(num3 >= num1, num3){
     console.log(num3)
 } 
+*/
 
 
+
+
+
+//obj
+let man = {
+    name: 'Muslim',
+    familia: 'Bisultanov',
+    age: 20,
+    height: 177,
+    login: 'mylogin@mail.com',
+    password: 12121212,
+    money: 150000
+}
+console.log(man)
+
+man.adres ='Grozny'
+
+let password = 12121212
+if(password == man.password) {
+    console.log(`Добро пожаловать! ${man.name} ${man.familia} ${man.login}`)
+} else {
+    console.log('Указанный пароль не верен. Попробуйте еще раз')
+}
+
+
+let i = 0
+while(i<=10){
+    console.log(i++)
+}
