@@ -51,7 +51,7 @@ if(num1 >= num2, num3){
 } else if(num3 >= num1, num3){
     console.log(num3)
 } 
-*/
+
 
 
 
@@ -83,3 +83,29 @@ let i = 0
 while(i<=10){
     console.log(i++)
 }
+ */
+
+
+
+
+
+
+
+//6
+
+let arr = [95, 'lorem', true, 721, 24005, 'one', 'two', 'three', 1]
+console.log (arr.length)
+console.log (arr[arr.length - 1])
+console.log (arr[0])
+
+let em = [2, false, 'word', 33, 'xxxxxxxx'];
+em [5] = 123
+em.unshift(555, 334, 414)
+em.shift()
+em.splice(-2, 2)
+console.log (em)
+
+let number = [1, 3, 5, 7, 9]
+if(number % 2 !== 0){
+   return number + 1}
+console.log(number) //попробую еще
