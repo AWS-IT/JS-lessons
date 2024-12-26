@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
     <script src="./app.js" defer></script>
 </head>
 <body>
-    <button>x</button>
+    <ol id="ol-id" class="ol">
+        <li>1234567890</li>
+        <li>1234567890</li>
+        <li>1234567890</li>
+        <li>1234567890</li>
+        <li>1234567890</li>
+        <li>1234567890</li>
+        <li>1234567890</li>
+        <li>1234567890</li>
+    </ol>
+    <button onclick="change('green')">g</button>
+    <button onclick="change('yellow')">y</button>
+    <button onclick="change('red')">r</button>
+    <button onclick="change('blue')">b</button>
+
+    <div id="block-id" class="block">
+        <p>...</p>
+    </div>
+
+    <script>
+        let div = document.getElementById('block-id')
+        let ol = document.getElementById('ol-id')
+        function change (color){
+            ol.style.backgroundColor = color
+            div.style.backgroundColor = color
+        }
+    </script>
 </body>
 </html>

@@ -83,7 +83,7 @@ let i = 0
 while(i<=10){
     console.log(i++)
 }
- */
+ 
 
 
 
@@ -109,3 +109,32 @@ let number = [1, 3, 5, 7, 9]
 if(number % 2 !== 0){
    return number + 1}
 console.log(number) //попробую еще
+*/
+
+
+
+//7
+
+arr_1 = [101, 202, 303, 404, 505]
+arr_2 = [606, 707, 808, 909]
+superArr = [...arr_1, ...arr_2]
+
+
+console.log(...superArr)
+console.dir(Math.min(...superArr))
+
+
+obj = {
+    width: 300,
+    heigth: 550
+}
+obj2 = {...obj, area(){return this.width * this.heigth}}
+console.log(obj2. area())
+
+
+
+function fn (...args){
+    return args.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+}
+fn(2, 2, 3, 3, 4, 34, 34, 34, 3, 7)
+console.log(fn())
